@@ -1,0 +1,602 @@
+[2021-09-28 21:01:10,637] {scheduler_job.py:154} INFO - Started process (PID=8140) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-28 21:01:10,641] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-28 21:01:10,642] {logging_mixin.py:112} INFO - [2021-09-28 21:01:10,642] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-28 21:01:12,030] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-28 21:01:12,162] {scheduler_job.py:1305} INFO - Processing test-02
+[2021-09-28 21:01:12,686] {scheduler_job.py:1315} INFO - Created <DagRun test-02 @ 2021-09-28T00:46:00+00:00: scheduled__2021-09-28T00:46:00+00:00, externally triggered: False>
+[2021-09-28 21:01:12,773] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-02 @ 2021-09-28 00:40:00+00:00: scheduled__2021-09-28T00:40:00+00:00, externally triggered: False>
+[2021-09-28 21:01:12,812] {logging_mixin.py:112} INFO - [2021-09-28 21:01:12,812] {dagrun.py:320} INFO - Marking run <DagRun test-02 @ 2021-09-28 00:40:00+00:00: scheduled__2021-09-28T00:40:00+00:00, externally triggered: False> successful
+[2021-09-28 21:01:12,927] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-02 @ 2021-09-28 00:42:00+00:00: scheduled__2021-09-28T00:42:00+00:00, externally triggered: False>
+[2021-09-28 21:01:12,966] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-02 @ 2021-09-28 00:44:00+00:00: scheduled__2021-09-28T00:44:00+00:00, externally triggered: False>
+[2021-09-28 21:01:13,003] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-02 @ 2021-09-28 00:46:00+00:00: scheduled__2021-09-28T00:46:00+00:00, externally triggered: False>
+[2021-09-28 21:01:13,141] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-02> because no tasks in DAG have SLAs
+[2021-09-28 21:01:13,146] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-02.print-age 2021-09-28 00:42:00+00:00 [scheduled]> in ORM
+[2021-09-28 21:01:13,152] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-02.compute-mean-age 2021-09-28 00:44:00+00:00 [scheduled]> in ORM
+[2021-09-28 21:01:13,156] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-02.get-data 2021-09-28 00:46:00+00:00 [scheduled]> in ORM
+[2021-09-28 21:01:13,221] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 2.584 seconds
+[2021-09-28 21:03:12,691] {scheduler_job.py:154} INFO - Started process (PID=8505) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-28 21:03:12,810] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-28 21:03:12,813] {logging_mixin.py:112} INFO - [2021-09-28 21:03:12,813] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-28 21:03:14,735] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-28 21:03:14,952] {scheduler_job.py:1305} INFO - Processing test-02
+[2021-09-28 21:03:15,333] {scheduler_job.py:1315} INFO - Created <DagRun test-02 @ 2021-09-28T00:48:00+00:00: scheduled__2021-09-28T00:48:00+00:00, externally triggered: False>
+[2021-09-28 21:03:15,344] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-02 @ 2021-09-28 00:42:00+00:00: scheduled__2021-09-28T00:42:00+00:00, externally triggered: False>
+[2021-09-28 21:03:15,455] {logging_mixin.py:112} INFO - [2021-09-28 21:03:15,455] {dagrun.py:320} INFO - Marking run <DagRun test-02 @ 2021-09-28 00:42:00+00:00: scheduled__2021-09-28T00:42:00+00:00, externally triggered: False> successful
+[2021-09-28 21:03:15,508] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-02 @ 2021-09-28 00:44:00+00:00: scheduled__2021-09-28T00:44:00+00:00, externally triggered: False>
+[2021-09-28 21:03:15,772] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-02 @ 2021-09-28 00:46:00+00:00: scheduled__2021-09-28T00:46:00+00:00, externally triggered: False>
+[2021-09-28 21:03:15,893] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-02 @ 2021-09-28 00:48:00+00:00: scheduled__2021-09-28T00:48:00+00:00, externally triggered: False>
+[2021-09-28 21:03:16,013] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-02> because no tasks in DAG have SLAs
+[2021-09-28 21:03:16,018] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-02.print-age 2021-09-28 00:44:00+00:00 [scheduled]> in ORM
+[2021-09-28 21:03:16,022] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-02.compute-mean-age 2021-09-28 00:46:00+00:00 [scheduled]> in ORM
+[2021-09-28 21:03:16,033] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-02.get-data 2021-09-28 00:48:00+00:00 [scheduled]> in ORM
+[2021-09-28 21:03:16,095] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 3.404 seconds
+[2021-09-29 14:49:51,478] {scheduler_job.py:154} INFO - Started process (PID=42984) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:49:51,489] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:49:51,490] {logging_mixin.py:112} INFO - [2021-09-29 14:49:51,490] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:49:51,744] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:49:51,816] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.338 seconds
+[2021-09-29 14:50:47,520] {scheduler_job.py:154} INFO - Started process (PID=43047) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:50:47,527] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:50:47,527] {logging_mixin.py:112} INFO - [2021-09-29 14:50:47,527] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:50:47,858] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:50:48,041] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.517 seconds
+[2021-09-29 14:51:43,575] {scheduler_job.py:154} INFO - Started process (PID=43109) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:51:43,578] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:51:43,578] {logging_mixin.py:112} INFO - [2021-09-29 14:51:43,578] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:51:43,713] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:51:43,835] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.261 seconds
+[2021-09-29 14:52:39,653] {scheduler_job.py:154} INFO - Started process (PID=43167) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:52:39,657] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:52:39,657] {logging_mixin.py:112} INFO - [2021-09-29 14:52:39,657] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:52:39,810] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:52:39,827] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.174 seconds
+[2021-09-29 14:53:35,711] {scheduler_job.py:154} INFO - Started process (PID=43232) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:53:35,714] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:53:35,715] {logging_mixin.py:112} INFO - [2021-09-29 14:53:35,714] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:53:35,853] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:53:35,882] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.171 seconds
+[2021-09-29 14:54:31,775] {scheduler_job.py:154} INFO - Started process (PID=43298) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:54:31,777] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:54:31,777] {logging_mixin.py:112} INFO - [2021-09-29 14:54:31,777] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:54:31,911] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:54:32,035] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.260 seconds
+[2021-09-29 14:55:27,840] {scheduler_job.py:154} INFO - Started process (PID=43366) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:55:27,842] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:55:27,842] {logging_mixin.py:112} INFO - [2021-09-29 14:55:27,842] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:55:27,999] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:55:28,015] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.176 seconds
+[2021-09-29 14:56:23,895] {scheduler_job.py:154} INFO - Started process (PID=43424) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:56:23,896] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:56:23,897] {logging_mixin.py:112} INFO - [2021-09-29 14:56:23,897] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:56:24,025] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:56:24,042] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.147 seconds
+[2021-09-29 14:57:19,971] {scheduler_job.py:154} INFO - Started process (PID=43485) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:57:19,974] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:57:19,975] {logging_mixin.py:112} INFO - [2021-09-29 14:57:19,975] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:57:20,105] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:57:20,122] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.150 seconds
+[2021-09-29 14:58:16,020] {scheduler_job.py:154} INFO - Started process (PID=43552) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:58:16,025] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:58:16,026] {logging_mixin.py:112} INFO - [2021-09-29 14:58:16,025] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:58:16,227] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:58:16,242] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.222 seconds
+[2021-09-29 14:59:12,083] {scheduler_job.py:154} INFO - Started process (PID=43619) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:59:12,085] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 14:59:12,085] {logging_mixin.py:112} INFO - [2021-09-29 14:59:12,085] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:59:12,231] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 14:59:12,370] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.287 seconds
+[2021-09-29 15:00:08,153] {scheduler_job.py:154} INFO - Started process (PID=43671) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:00:08,156] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:00:08,157] {logging_mixin.py:112} INFO - [2021-09-29 15:00:08,157] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:00:08,284] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:00:08,302] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.150 seconds
+[2021-09-29 15:01:04,230] {scheduler_job.py:154} INFO - Started process (PID=43715) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:01:04,232] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:01:04,233] {logging_mixin.py:112} INFO - [2021-09-29 15:01:04,232] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:01:04,374] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:01:04,391] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.160 seconds
+[2021-09-29 15:02:00,263] {scheduler_job.py:154} INFO - Started process (PID=43752) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:02:00,266] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:02:00,266] {logging_mixin.py:112} INFO - [2021-09-29 15:02:00,266] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:02:00,398] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:02:00,530] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.267 seconds
+[2021-09-29 15:02:56,333] {scheduler_job.py:154} INFO - Started process (PID=43818) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:02:56,335] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:02:56,336] {logging_mixin.py:112} INFO - [2021-09-29 15:02:56,335] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:02:56,462] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:02:56,600] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.267 seconds
+[2021-09-29 15:03:52,536] {scheduler_job.py:154} INFO - Started process (PID=43880) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:03:52,538] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:03:52,538] {logging_mixin.py:112} INFO - [2021-09-29 15:03:52,538] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:03:52,664] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:03:52,680] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.144 seconds
+[2021-09-29 15:04:48,455] {scheduler_job.py:154} INFO - Started process (PID=43951) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:04:48,459] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:04:48,459] {logging_mixin.py:112} INFO - [2021-09-29 15:04:48,459] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:04:48,620] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:04:48,782] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.326 seconds
+[2021-09-29 15:05:44,525] {scheduler_job.py:154} INFO - Started process (PID=44015) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:05:44,528] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:05:44,529] {logging_mixin.py:112} INFO - [2021-09-29 15:05:44,529] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:05:44,662] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:05:44,876] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.351 seconds
+[2021-09-29 15:06:40,602] {scheduler_job.py:154} INFO - Started process (PID=44070) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:06:40,609] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:06:40,609] {logging_mixin.py:112} INFO - [2021-09-29 15:06:40,609] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:06:40,756] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:06:40,829] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.226 seconds
+[2021-09-29 15:07:36,654] {scheduler_job.py:154} INFO - Started process (PID=44134) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:07:36,658] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:07:36,659] {logging_mixin.py:112} INFO - [2021-09-29 15:07:36,659] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:07:36,787] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:07:36,982] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.328 seconds
+[2021-09-29 15:08:32,706] {scheduler_job.py:154} INFO - Started process (PID=44197) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:08:32,708] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:08:32,708] {logging_mixin.py:112} INFO - [2021-09-29 15:08:32,708] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:08:32,841] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:08:33,026] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.321 seconds
+[2021-09-29 15:09:28,924] {scheduler_job.py:154} INFO - Started process (PID=44266) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:09:28,926] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:09:28,926] {logging_mixin.py:112} INFO - [2021-09-29 15:09:28,926] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:09:29,057] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:09:29,143] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.219 seconds
+[2021-09-29 15:10:24,838] {scheduler_job.py:154} INFO - Started process (PID=44331) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:10:24,840] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:10:24,840] {logging_mixin.py:112} INFO - [2021-09-29 15:10:24,840] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:10:24,977] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:10:25,153] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.315 seconds
+[2021-09-29 15:11:20,915] {scheduler_job.py:154} INFO - Started process (PID=44397) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:11:20,918] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:11:20,919] {logging_mixin.py:112} INFO - [2021-09-29 15:11:20,918] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:11:21,082] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:11:21,294] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.379 seconds
+[2021-09-29 15:12:16,989] {scheduler_job.py:154} INFO - Started process (PID=44473) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:12:16,991] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:12:16,991] {logging_mixin.py:112} INFO - [2021-09-29 15:12:16,991] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:12:17,141] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:12:17,256] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.267 seconds
+[2021-09-29 15:13:13,022] {scheduler_job.py:154} INFO - Started process (PID=44567) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:13:13,024] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:13:13,025] {logging_mixin.py:112} INFO - [2021-09-29 15:13:13,025] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:13:13,210] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:13:13,355] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.333 seconds
+[2021-09-29 15:14:09,095] {scheduler_job.py:154} INFO - Started process (PID=44636) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:14:09,097] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:14:09,097] {logging_mixin.py:112} INFO - [2021-09-29 15:14:09,097] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:14:09,290] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:14:09,325] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.230 seconds
+[2021-09-29 15:15:05,151] {scheduler_job.py:154} INFO - Started process (PID=44702) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:15:05,153] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:15:05,153] {logging_mixin.py:112} INFO - [2021-09-29 15:15:05,153] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:15:05,359] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:15:05,374] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.224 seconds
+[2021-09-29 15:16:01,207] {scheduler_job.py:154} INFO - Started process (PID=44772) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:16:01,209] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:16:01,209] {logging_mixin.py:112} INFO - [2021-09-29 15:16:01,209] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:16:01,398] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:16:01,525] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.318 seconds
+[2021-09-29 15:16:57,262] {scheduler_job.py:154} INFO - Started process (PID=44833) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:16:57,264] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:16:57,265] {logging_mixin.py:112} INFO - [2021-09-29 15:16:57,265] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:16:57,444] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:16:57,556] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.294 seconds
+[2021-09-29 15:17:53,325] {scheduler_job.py:154} INFO - Started process (PID=44938) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:17:53,327] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:17:53,328] {logging_mixin.py:112} INFO - [2021-09-29 15:17:53,328] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:17:53,539] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:17:53,557] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.232 seconds
+[2021-09-29 15:18:49,390] {scheduler_job.py:154} INFO - Started process (PID=45006) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:18:49,392] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:18:49,393] {logging_mixin.py:112} INFO - [2021-09-29 15:18:49,393] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:18:49,619] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:18:49,736] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.347 seconds
+[2021-09-29 15:19:45,459] {scheduler_job.py:154} INFO - Started process (PID=45076) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:19:45,462] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:19:45,463] {logging_mixin.py:112} INFO - [2021-09-29 15:19:45,463] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:19:45,679] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:19:45,807] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.348 seconds
+[2021-09-29 15:20:41,537] {scheduler_job.py:154} INFO - Started process (PID=45140) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:20:41,557] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:20:41,558] {logging_mixin.py:112} INFO - [2021-09-29 15:20:41,557] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:20:41,802] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:20:41,821] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.284 seconds
+[2021-09-29 15:21:37,589] {scheduler_job.py:154} INFO - Started process (PID=45206) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:21:37,592] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:21:37,593] {logging_mixin.py:112} INFO - [2021-09-29 15:21:37,592] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:21:37,816] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:21:37,947] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.359 seconds
+[2021-09-29 15:22:33,654] {scheduler_job.py:154} INFO - Started process (PID=45274) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:22:33,657] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:22:33,657] {logging_mixin.py:112} INFO - [2021-09-29 15:22:33,657] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:22:33,868] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:22:33,886] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.232 seconds
+[2021-09-29 15:23:29,710] {scheduler_job.py:154} INFO - Started process (PID=45340) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:23:29,714] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:23:29,714] {logging_mixin.py:112} INFO - [2021-09-29 15:23:29,714] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:23:29,960] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:23:29,977] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.266 seconds
+[2021-09-29 15:24:25,773] {scheduler_job.py:154} INFO - Started process (PID=45411) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:24:25,777] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:24:25,777] {logging_mixin.py:112} INFO - [2021-09-29 15:24:25,777] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:24:26,002] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:24:26,033] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.260 seconds
+[2021-09-29 15:25:21,835] {scheduler_job.py:154} INFO - Started process (PID=45480) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:25:21,837] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:25:21,837] {logging_mixin.py:112} INFO - [2021-09-29 15:25:21,837] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:25:22,052] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:25:22,186] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.352 seconds
+[2021-09-29 15:26:17,890] {scheduler_job.py:154} INFO - Started process (PID=45538) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:26:17,892] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:26:17,892] {logging_mixin.py:112} INFO - [2021-09-29 15:26:17,892] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:26:18,126] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:26:18,146] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.256 seconds
+[2021-09-29 15:27:13,946] {scheduler_job.py:154} INFO - Started process (PID=45604) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:27:13,948] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:27:13,949] {logging_mixin.py:112} INFO - [2021-09-29 15:27:13,949] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:27:14,174] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:27:14,302] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.356 seconds
+[2021-09-29 15:28:10,019] {scheduler_job.py:154} INFO - Started process (PID=45670) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:28:10,022] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:28:10,023] {logging_mixin.py:112} INFO - [2021-09-29 15:28:10,023] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:28:10,237] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:28:10,365] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.346 seconds
+[2021-09-29 15:29:06,087] {scheduler_job.py:154} INFO - Started process (PID=45739) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:29:06,090] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:29:06,090] {logging_mixin.py:112} INFO - [2021-09-29 15:29:06,090] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:29:06,329] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:29:06,349] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.264 seconds
+[2021-09-29 15:30:02,145] {scheduler_job.py:154} INFO - Started process (PID=45802) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:30:02,147] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:30:02,147] {logging_mixin.py:112} INFO - [2021-09-29 15:30:02,147] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:30:02,375] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:30:02,504] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.359 seconds
+[2021-09-29 15:30:58,202] {scheduler_job.py:154} INFO - Started process (PID=45879) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:30:58,205] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:30:58,205] {logging_mixin.py:112} INFO - [2021-09-29 15:30:58,205] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:30:58,421] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:30:58,548] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.346 seconds
+[2021-09-29 15:31:54,271] {scheduler_job.py:154} INFO - Started process (PID=45945) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:31:54,273] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:31:54,273] {logging_mixin.py:112} INFO - [2021-09-29 15:31:54,273] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:31:54,523] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:31:54,579] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.308 seconds
+[2021-09-29 15:32:50,347] {scheduler_job.py:154} INFO - Started process (PID=46009) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:32:50,349] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:32:50,350] {logging_mixin.py:112} INFO - [2021-09-29 15:32:50,350] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:32:50,578] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:32:50,596] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.249 seconds
+[2021-09-29 15:33:46,413] {scheduler_job.py:154} INFO - Started process (PID=46073) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:33:46,415] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:33:46,416] {logging_mixin.py:112} INFO - [2021-09-29 15:33:46,416] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:33:46,653] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:33:46,779] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.366 seconds
+[2021-09-29 15:34:42,472] {scheduler_job.py:154} INFO - Started process (PID=46148) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:34:42,476] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:34:42,476] {logging_mixin.py:112} INFO - [2021-09-29 15:34:42,476] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:34:42,723] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:34:42,741] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.268 seconds
+[2021-09-29 15:35:38,527] {scheduler_job.py:154} INFO - Started process (PID=46219) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:35:38,531] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:35:38,531] {logging_mixin.py:112} INFO - [2021-09-29 15:35:38,531] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:35:38,767] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:35:38,904] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.378 seconds
+[2021-09-29 15:36:34,591] {scheduler_job.py:154} INFO - Started process (PID=46287) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:36:34,594] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:36:34,595] {logging_mixin.py:112} INFO - [2021-09-29 15:36:34,595] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:36:34,795] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:36:34,922] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.331 seconds
+[2021-09-29 15:37:30,659] {scheduler_job.py:154} INFO - Started process (PID=46346) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:37:30,661] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:37:30,662] {logging_mixin.py:112} INFO - [2021-09-29 15:37:30,662] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:37:30,884] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:37:30,900] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.241 seconds
+[2021-09-29 15:38:26,723] {scheduler_job.py:154} INFO - Started process (PID=46411) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:38:26,727] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:38:26,728] {logging_mixin.py:112} INFO - [2021-09-29 15:38:26,728] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:38:26,920] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:38:27,058] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.335 seconds
+[2021-09-29 15:39:22,788] {scheduler_job.py:154} INFO - Started process (PID=46478) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:39:22,792] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:39:22,792] {logging_mixin.py:112} INFO - [2021-09-29 15:39:22,792] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:39:22,992] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:39:23,120] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.332 seconds
+[2021-09-29 15:40:18,855] {scheduler_job.py:154} INFO - Started process (PID=46550) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:40:18,858] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:40:18,858] {logging_mixin.py:112} INFO - [2021-09-29 15:40:18,858] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:40:19,072] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:40:19,087] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.232 seconds
+[2021-09-29 15:41:14,916] {scheduler_job.py:154} INFO - Started process (PID=46610) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:41:14,919] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:41:14,919] {logging_mixin.py:112} INFO - [2021-09-29 15:41:14,919] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:41:15,123] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:41:15,257] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.342 seconds
+[2021-09-29 15:42:10,971] {scheduler_job.py:154} INFO - Started process (PID=46679) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:42:10,973] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:42:10,973] {logging_mixin.py:112} INFO - [2021-09-29 15:42:10,973] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:42:11,172] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:42:11,297] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.327 seconds
+[2021-09-29 15:43:07,029] {scheduler_job.py:154} INFO - Started process (PID=46839) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:43:07,030] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:43:07,031] {logging_mixin.py:112} INFO - [2021-09-29 15:43:07,031] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:43:07,247] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:43:07,262] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.234 seconds
+[2021-09-29 15:44:03,088] {scheduler_job.py:154} INFO - Started process (PID=46950) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:44:03,092] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:44:03,092] {logging_mixin.py:112} INFO - [2021-09-29 15:44:03,092] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:44:03,295] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:44:03,324] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.236 seconds
+[2021-09-29 15:44:59,142] {scheduler_job.py:154} INFO - Started process (PID=47016) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:44:59,144] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:44:59,144] {logging_mixin.py:112} INFO - [2021-09-29 15:44:59,144] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:44:59,340] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:44:59,475] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.333 seconds
+[2021-09-29 15:45:55,211] {scheduler_job.py:154} INFO - Started process (PID=47084) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:45:55,214] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:45:55,214] {logging_mixin.py:112} INFO - [2021-09-29 15:45:55,214] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:45:55,438] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:45:55,454] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.243 seconds
+[2021-09-29 15:46:51,271] {scheduler_job.py:154} INFO - Started process (PID=47153) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:46:51,275] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:46:51,276] {logging_mixin.py:112} INFO - [2021-09-29 15:46:51,275] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:46:51,473] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:46:51,588] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.317 seconds
+[2021-09-29 15:47:47,342] {scheduler_job.py:154} INFO - Started process (PID=47220) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:47:47,345] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:47:47,346] {logging_mixin.py:112} INFO - [2021-09-29 15:47:47,346] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:47:47,541] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:47:47,670] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.329 seconds
+[2021-09-29 15:48:43,409] {scheduler_job.py:154} INFO - Started process (PID=47284) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:48:43,413] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:48:43,414] {logging_mixin.py:112} INFO - [2021-09-29 15:48:43,414] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:48:43,629] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:48:43,644] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.234 seconds
+[2021-09-29 15:49:39,455] {scheduler_job.py:154} INFO - Started process (PID=47356) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:49:39,458] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:49:39,458] {logging_mixin.py:112} INFO - [2021-09-29 15:49:39,458] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:49:39,651] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:49:39,777] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.322 seconds
+[2021-09-29 15:50:35,527] {scheduler_job.py:154} INFO - Started process (PID=47425) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:50:35,531] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:50:35,532] {logging_mixin.py:112} INFO - [2021-09-29 15:50:35,532] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:50:35,728] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:50:35,851] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.324 seconds
+[2021-09-29 15:51:31,723] {scheduler_job.py:154} INFO - Started process (PID=47494) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:51:31,725] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:51:31,725] {logging_mixin.py:112} INFO - [2021-09-29 15:51:31,725] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:51:31,934] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:51:31,950] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.227 seconds
+[2021-09-29 15:52:27,638] {scheduler_job.py:154} INFO - Started process (PID=47565) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:52:27,640] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:52:27,641] {logging_mixin.py:112} INFO - [2021-09-29 15:52:27,641] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:52:27,847] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:52:27,979] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.341 seconds
+[2021-09-29 15:53:23,717] {scheduler_job.py:154} INFO - Started process (PID=47628) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:53:23,719] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:53:23,719] {logging_mixin.py:112} INFO - [2021-09-29 15:53:23,719] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:53:23,920] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:53:24,044] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.328 seconds
+[2021-09-29 15:54:19,792] {scheduler_job.py:154} INFO - Started process (PID=47695) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:54:19,794] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:54:19,795] {logging_mixin.py:112} INFO - [2021-09-29 15:54:19,795] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:54:20,019] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:54:20,035] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.244 seconds
+[2021-09-29 15:55:15,853] {scheduler_job.py:154} INFO - Started process (PID=47753) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:55:15,856] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:55:15,856] {logging_mixin.py:112} INFO - [2021-09-29 15:55:15,856] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:55:16,063] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:55:16,096] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.242 seconds
+[2021-09-29 15:56:11,917] {scheduler_job.py:154} INFO - Started process (PID=47819) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:56:11,920] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:56:11,920] {logging_mixin.py:112} INFO - [2021-09-29 15:56:11,920] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:56:12,128] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:56:12,262] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.345 seconds
+[2021-09-29 15:57:07,979] {scheduler_job.py:154} INFO - Started process (PID=47880) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:57:07,981] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:57:07,981] {logging_mixin.py:112} INFO - [2021-09-29 15:57:07,981] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:57:08,217] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:57:08,233] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.254 seconds
+[2021-09-29 15:58:04,058] {scheduler_job.py:154} INFO - Started process (PID=47949) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:58:04,060] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:58:04,067] {logging_mixin.py:112} INFO - [2021-09-29 15:58:04,067] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:58:04,666] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:58:04,799] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.741 seconds
+[2021-09-29 15:59:00,112] {scheduler_job.py:154} INFO - Started process (PID=48016) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:59:00,114] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:59:00,114] {logging_mixin.py:112} INFO - [2021-09-29 15:59:00,114] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:59:00,341] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:59:00,365] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.253 seconds
+[2021-09-29 15:59:56,174] {scheduler_job.py:154} INFO - Started process (PID=48085) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:59:56,176] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 15:59:56,177] {logging_mixin.py:112} INFO - [2021-09-29 15:59:56,176] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:59:56,420] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 15:59:56,436] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.262 seconds
+[2021-09-29 16:00:52,235] {scheduler_job.py:154} INFO - Started process (PID=48153) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:00:52,238] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:00:52,238] {logging_mixin.py:112} INFO - [2021-09-29 16:00:52,238] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:00:52,437] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:00:52,567] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.332 seconds
+[2021-09-29 16:01:48,299] {scheduler_job.py:154} INFO - Started process (PID=48218) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:01:48,301] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:01:48,301] {logging_mixin.py:112} INFO - [2021-09-29 16:01:48,301] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:01:48,527] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:01:48,541] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.242 seconds
+[2021-09-29 16:02:44,404] {scheduler_job.py:154} INFO - Started process (PID=48305) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:02:44,406] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:02:44,406] {logging_mixin.py:112} INFO - [2021-09-29 16:02:44,406] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:02:44,926] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:02:44,974] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.570 seconds
+[2021-09-29 16:03:40,441] {scheduler_job.py:154} INFO - Started process (PID=48397) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:03:40,443] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:03:40,444] {logging_mixin.py:112} INFO - [2021-09-29 16:03:40,444] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:03:40,634] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:03:40,656] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.215 seconds
+[2021-09-29 16:04:36,511] {scheduler_job.py:154} INFO - Started process (PID=48463) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:04:36,514] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:04:36,515] {logging_mixin.py:112} INFO - [2021-09-29 16:04:36,515] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:04:36,718] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:04:36,839] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.328 seconds
+[2021-09-29 16:05:32,557] {scheduler_job.py:154} INFO - Started process (PID=48530) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:05:32,559] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:05:32,559] {logging_mixin.py:112} INFO - [2021-09-29 16:05:32,559] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:05:32,768] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:05:32,783] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.226 seconds
+[2021-09-29 16:06:28,618] {scheduler_job.py:154} INFO - Started process (PID=48591) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:06:28,624] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:06:28,624] {logging_mixin.py:112} INFO - [2021-09-29 16:06:28,624] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:06:28,856] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:06:28,980] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.362 seconds
+[2021-09-29 16:07:24,667] {scheduler_job.py:154} INFO - Started process (PID=48655) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:07:24,670] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:07:24,670] {logging_mixin.py:112} INFO - [2021-09-29 16:07:24,670] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:07:24,879] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:07:25,001] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.334 seconds
+[2021-09-29 16:08:20,729] {scheduler_job.py:154} INFO - Started process (PID=48717) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:08:20,732] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:08:20,733] {logging_mixin.py:112} INFO - [2021-09-29 16:08:20,732] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:08:21,307] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:08:21,330] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.602 seconds
+[2021-09-29 16:09:16,808] {scheduler_job.py:154} INFO - Started process (PID=48840) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:09:16,815] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:09:16,815] {logging_mixin.py:112} INFO - [2021-09-29 16:09:16,815] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:09:17,381] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:09:17,589] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.781 seconds
+[2021-09-29 16:10:12,857] {scheduler_job.py:154} INFO - Started process (PID=48906) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:10:12,866] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:10:12,867] {logging_mixin.py:112} INFO - [2021-09-29 16:10:12,867] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:10:13,612] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:10:13,751] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.894 seconds
+[2021-09-29 16:11:21,271] {scheduler_job.py:154} INFO - Started process (PID=49001) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:11:21,274] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:11:21,274] {logging_mixin.py:112} INFO - [2021-09-29 16:11:21,274] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:11:21,535] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:11:21,552] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.281 seconds
+[2021-09-29 16:12:56,187] {scheduler_job.py:154} INFO - Started process (PID=49106) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:12:56,190] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:12:56,190] {logging_mixin.py:112} INFO - [2021-09-29 16:12:56,190] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:12:56,902] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:12:56,978] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.791 seconds
+[2021-09-29 16:14:04,338] {scheduler_job.py:154} INFO - Started process (PID=49173) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:14:04,341] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:14:04,342] {logging_mixin.py:112} INFO - [2021-09-29 16:14:04,342] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:14:04,524] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:14:04,540] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.202 seconds
+[2021-09-29 16:15:12,369] {scheduler_job.py:154} INFO - Started process (PID=49235) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:15:12,371] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:15:12,371] {logging_mixin.py:112} INFO - [2021-09-29 16:15:12,371] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:15:12,578] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:15:12,596] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.227 seconds
+[2021-09-29 16:16:13,826] {scheduler_job.py:154} INFO - Started process (PID=49286) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:16:13,828] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:16:13,828] {logging_mixin.py:112} INFO - [2021-09-29 16:16:13,828] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:16:14,022] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:16:14,182] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.357 seconds
+[2021-09-29 16:17:22,074] {scheduler_job.py:154} INFO - Started process (PID=49349) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:17:22,077] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:17:22,077] {logging_mixin.py:112} INFO - [2021-09-29 16:17:22,077] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:17:22,273] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:17:22,432] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.358 seconds
+[2021-09-29 16:18:39,538] {scheduler_job.py:154} INFO - Started process (PID=49399) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:18:39,540] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:18:39,540] {logging_mixin.py:112} INFO - [2021-09-29 16:18:39,540] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:18:39,748] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:18:39,871] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.333 seconds
+[2021-09-29 16:19:40,915] {scheduler_job.py:154} INFO - Started process (PID=49455) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:19:40,919] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:19:40,919] {logging_mixin.py:112} INFO - [2021-09-29 16:19:40,919] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:19:41,189] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:19:41,206] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.291 seconds
+[2021-09-29 16:20:58,005] {scheduler_job.py:154} INFO - Started process (PID=49513) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:20:58,025] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:20:58,025] {logging_mixin.py:112} INFO - [2021-09-29 16:20:58,025] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:20:58,264] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:20:58,293] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.289 seconds
+[2021-09-29 16:22:04,234] {scheduler_job.py:154} INFO - Started process (PID=49561) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:22:04,236] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:22:04,237] {logging_mixin.py:112} INFO - [2021-09-29 16:22:04,237] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:22:04,443] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:22:04,468] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.234 seconds
+[2021-09-29 16:23:20,292] {scheduler_job.py:154} INFO - Started process (PID=49718) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:23:20,300] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:23:20,300] {logging_mixin.py:112} INFO - [2021-09-29 16:23:20,300] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:23:20,632] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:23:20,673] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.381 seconds
+[2021-09-29 16:24:33,277] {scheduler_job.py:154} INFO - Started process (PID=51596) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:24:33,300] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:24:33,300] {logging_mixin.py:112} INFO - [2021-09-29 16:24:33,300] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:24:33,488] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:24:33,547] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.270 seconds
+[2021-09-29 16:26:01,981] {scheduler_job.py:154} INFO - Started process (PID=52093) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:26:02,021] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:26:02,021] {logging_mixin.py:112} INFO - [2021-09-29 16:26:02,021] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:26:02,218] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:26:02,272] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.291 seconds
+[2021-09-29 16:29:51,770] {scheduler_job.py:154} INFO - Started process (PID=52350) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:29:51,824] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:29:51,825] {logging_mixin.py:112} INFO - [2021-09-29 16:29:51,824] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:29:52,295] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:29:52,403] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.632 seconds
+[2021-09-29 16:30:47,789] {scheduler_job.py:154} INFO - Started process (PID=52434) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:30:47,791] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:30:47,792] {logging_mixin.py:112} INFO - [2021-09-29 16:30:47,792] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:30:48,008] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:30:48,055] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.266 seconds
+[2021-09-29 16:31:43,824] {scheduler_job.py:154} INFO - Started process (PID=52472) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:31:43,827] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:31:43,827] {logging_mixin.py:112} INFO - [2021-09-29 16:31:43,827] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:31:44,024] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:31:44,038] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.213 seconds
+[2021-09-29 16:32:39,900] {scheduler_job.py:154} INFO - Started process (PID=52509) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:32:39,904] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:32:39,904] {logging_mixin.py:112} INFO - [2021-09-29 16:32:39,904] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:32:40,094] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:32:40,212] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.312 seconds
+[2021-09-29 16:33:35,966] {scheduler_job.py:154} INFO - Started process (PID=52566) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:33:35,969] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:33:35,969] {logging_mixin.py:112} INFO - [2021-09-29 16:33:35,969] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:33:36,158] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:33:36,285] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.320 seconds
+[2021-09-29 16:34:45,001] {scheduler_job.py:154} INFO - Started process (PID=52612) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:34:45,003] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:34:45,004] {logging_mixin.py:112} INFO - [2021-09-29 16:34:45,004] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:34:45,185] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:34:45,322] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.321 seconds
+[2021-09-29 16:36:03,496] {scheduler_job.py:154} INFO - Started process (PID=52673) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:36:03,500] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:36:03,500] {logging_mixin.py:112} INFO - [2021-09-29 16:36:03,500] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:36:03,700] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:36:03,715] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.220 seconds
+[2021-09-29 16:37:28,184] {scheduler_job.py:154} INFO - Started process (PID=52786) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:37:28,188] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:37:28,188] {logging_mixin.py:112} INFO - [2021-09-29 16:37:28,188] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:37:28,374] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:37:28,388] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.204 seconds
+[2021-09-29 16:39:16,405] {scheduler_job.py:154} INFO - Started process (PID=52878) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:39:16,437] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:39:16,438] {logging_mixin.py:112} INFO - [2021-09-29 16:39:16,438] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:39:25,403] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:39:25,421] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 9.017 seconds
+[2021-09-29 16:40:55,520] {scheduler_job.py:154} INFO - Started process (PID=52954) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:40:55,545] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:40:55,545] {logging_mixin.py:112} INFO - [2021-09-29 16:40:55,545] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:40:57,240] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:40:57,266] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 1.746 seconds
+[2021-09-29 16:42:51,017] {scheduler_job.py:154} INFO - Started process (PID=53075) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:42:51,122] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:42:51,122] {logging_mixin.py:112} INFO - [2021-09-29 16:42:51,122] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:42:52,857] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:42:52,881] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 1.865 seconds
+[2021-09-29 16:44:47,221] {scheduler_job.py:154} INFO - Started process (PID=53232) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:44:47,226] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:44:47,227] {logging_mixin.py:112} INFO - [2021-09-29 16:44:47,227] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:44:47,576] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:44:47,692] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.471 seconds
+[2021-09-29 16:46:23,695] {scheduler_job.py:154} INFO - Started process (PID=53347) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:46:23,699] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:46:23,699] {logging_mixin.py:112} INFO - [2021-09-29 16:46:23,699] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:46:24,396] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:46:24,520] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.825 seconds
+[2021-09-29 16:47:19,743] {scheduler_job.py:154} INFO - Started process (PID=53433) to work on /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:47:19,747] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test02.py for tasks to queue
+[2021-09-29 16:47:19,747] {logging_mixin.py:112} INFO - [2021-09-29 16:47:19,747] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:47:19,990] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-02']) retrieved from /home/alunoigti/airflow/dags/test02.py
+[2021-09-29 16:47:20,005] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test02.py took 0.262 seconds

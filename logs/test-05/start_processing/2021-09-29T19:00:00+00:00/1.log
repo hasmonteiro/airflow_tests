@@ -1,0 +1,21 @@
+[2021-09-29 16:34:20,494] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.start_processing 2021-09-29T19:00:00+00:00 [queued]>
+[2021-09-29 16:34:20,508] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.start_processing 2021-09-29T19:00:00+00:00 [queued]>
+[2021-09-29 16:34:20,508] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 16:34:20,508] {taskinstance.py:881} INFO - Starting attempt 1 of 2
+[2021-09-29 16:34:20,508] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 16:34:20,532] {taskinstance.py:901} INFO - Executing <Task(BashOperator): start_processing> on 2021-09-29T19:00:00+00:00
+[2021-09-29 16:34:20,535] {standard_task_runner.py:54} INFO - Started process 52595 to run task
+[2021-09-29 16:34:20,563] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'test-05', 'start_processing', '2021-09-29T19:00:00+00:00', '--job_id', '118', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test05.py', '--cfg_path', '/tmp/tmp9924lpr6']
+[2021-09-29 16:34:20,564] {standard_task_runner.py:78} INFO - Job 118: Subtask start_processing
+[2021-09-29 16:34:20,656] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: test-05.start_processing 2021-09-29T19:00:00+00:00 [running]> alunoigti-VirtualBox
+[2021-09-29 16:34:20,680] {bash_operator.py:113} INFO - Tmp dir root location: 
+ /tmp
+[2021-09-29 16:34:20,680] {bash_operator.py:134} INFO - Temporary script location: /tmp/airflowtmpjlcj58th/start_processing6hqrr119
+[2021-09-29 16:34:20,680] {bash_operator.py:146} INFO - Running command: echo "Start Preprocessing! Go!" 
+[2021-09-29 16:34:20,723] {bash_operator.py:153} INFO - Output:
+[2021-09-29 16:34:20,752] {bash_operator.py:157} INFO - Start Preprocessing! Go!
+[2021-09-29 16:34:20,753] {bash_operator.py:159} INFO - Command exited with return code 0
+[2021-09-29 16:34:20,758] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=test-05, task_id=start_processing, execution_date=20210929T190000, start_date=20210929T193420, end_date=20210929T193420
+[2021-09-29 16:34:25,472] {local_task_job.py:102} INFO - Task exited with return code 0

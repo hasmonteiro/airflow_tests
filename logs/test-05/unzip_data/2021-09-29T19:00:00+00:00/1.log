@@ -1,0 +1,15 @@
+[2021-09-29 16:37:03,906] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.unzip_data 2021-09-29T19:00:00+00:00 [queued]>
+[2021-09-29 16:37:03,915] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.unzip_data 2021-09-29T19:00:00+00:00 [queued]>
+[2021-09-29 16:37:03,915] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 16:37:03,915] {taskinstance.py:881} INFO - Starting attempt 1 of 2
+[2021-09-29 16:37:03,915] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 16:37:03,923] {taskinstance.py:901} INFO - Executing <Task(PythonOperator): unzip_data> on 2021-09-29T19:00:00+00:00
+[2021-09-29 16:37:03,925] {standard_task_runner.py:54} INFO - Started process 52773 to run task
+[2021-09-29 16:37:03,958] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'test-05', 'unzip_data', '2021-09-29T19:00:00+00:00', '--job_id', '123', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test05.py', '--cfg_path', '/tmp/tmp0cnhvfct']
+[2021-09-29 16:37:03,959] {standard_task_runner.py:78} INFO - Job 123: Subtask unzip_data
+[2021-09-29 16:37:04,105] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: test-05.unzip_data 2021-09-29T19:00:00+00:00 [running]> alunoigti-VirtualBox
+[2021-09-29 16:37:06,544] {python_operator.py:114} INFO - Done. Returned value was: None
+[2021-09-29 16:37:06,547] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=test-05, task_id=unzip_data, execution_date=20210929T190000, start_date=20210929T193703, end_date=20210929T193706
+[2021-09-29 16:37:08,890] {local_task_job.py:102} INFO - Task exited with return code 0
