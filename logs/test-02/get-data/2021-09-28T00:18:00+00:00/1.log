@@ -1,0 +1,23 @@
+[2021-09-28 20:40:45,701] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-02.get-data 2021-09-28T00:18:00+00:00 [queued]>
+[2021-09-28 20:40:45,717] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-02.get-data 2021-09-28T00:18:00+00:00 [queued]>
+[2021-09-28 20:40:45,718] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-28 20:40:45,718] {taskinstance.py:881} INFO - Starting attempt 1 of 2
+[2021-09-28 20:40:45,718] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-28 20:40:45,768] {taskinstance.py:901} INFO - Executing <Task(BashOperator): get-data> on 2021-09-28T00:18:00+00:00
+[2021-09-28 20:40:45,770] {standard_task_runner.py:54} INFO - Started process 5491 to run task
+[2021-09-28 20:40:45,837] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'test-02', 'get-data', '2021-09-28T00:18:00+00:00', '--job_id', '40', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test02.py', '--cfg_path', '/tmp/tmp8d4nwpdb']
+[2021-09-28 20:40:45,838] {standard_task_runner.py:78} INFO - Job 40: Subtask get-data
+[2021-09-28 20:40:45,981] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: test-02.get-data 2021-09-28T00:18:00+00:00 [running]> alunoigti-VirtualBox
+[2021-09-28 20:40:46,002] {bash_operator.py:113} INFO - Tmp dir root location: 
+ /tmp
+[2021-09-28 20:40:46,003] {bash_operator.py:134} INFO - Temporary script location: /tmp/airflowtmpcfqlraev/get-dataorrvotcz
+[2021-09-28 20:40:46,004] {bash_operator.py:146} INFO - Running command: curl https://github.com/datasciencedojo/datasets/blob/master/titanic.csv -o ~/titanic.csv
+[2021-09-28 20:40:46,012] {bash_operator.py:153} INFO - Output:
+[2021-09-28 20:40:46,019] {bash_operator.py:157} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2021-09-28 20:40:46,020] {bash_operator.py:157} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2021-09-28 20:40:46,755] {bash_operator.py:157} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  202k    0  202k    0     0   290k      0 --:--:-- --:--:-- --:--:--  290k100  560k    0  560k    0     0   763k      0 --:--:-- --:--:-- --:--:--  762k
+[2021-09-28 20:40:46,756] {bash_operator.py:159} INFO - Command exited with return code 0
+[2021-09-28 20:40:46,778] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=test-02, task_id=get-data, execution_date=20210928T001800, start_date=20210928T234045, end_date=20210928T234046
+[2021-09-28 20:40:50,684] {local_task_job.py:102} INFO - Task exited with return code 0

@@ -1,0 +1,16 @@
+[2021-09-28 20:47:18,800] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-02.print-age 2021-09-28T00:18:00+00:00 [queued]>
+[2021-09-28 20:47:18,835] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-02.print-age 2021-09-28T00:18:00+00:00 [queued]>
+[2021-09-28 20:47:18,836] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-28 20:47:18,837] {taskinstance.py:881} INFO - Starting attempt 1 of 2
+[2021-09-28 20:47:18,837] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-28 20:47:18,857] {taskinstance.py:901} INFO - Executing <Task(PythonOperator): print-age> on 2021-09-28T00:18:00+00:00
+[2021-09-28 20:47:18,861] {standard_task_runner.py:54} INFO - Started process 6234 to run task
+[2021-09-28 20:47:18,906] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'test-02', 'print-age', '2021-09-28T00:18:00+00:00', '--job_id', '59', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test02.py', '--cfg_path', '/tmp/tmpedziqefo']
+[2021-09-28 20:47:18,907] {standard_task_runner.py:78} INFO - Job 59: Subtask print-age
+[2021-09-28 20:47:19,215] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: test-02.print-age 2021-09-28T00:18:00+00:00 [running]> alunoigti-VirtualBox
+[2021-09-28 20:47:19,259] {logging_mixin.py:112} INFO - The mean age in Titanic was 29.69911764705882 years.
+[2021-09-28 20:47:19,260] {python_operator.py:114} INFO - Done. Returned value was: None
+[2021-09-28 20:47:19,265] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=test-02, task_id=print-age, execution_date=20210928T001800, start_date=20210928T234718, end_date=20210928T234719
+[2021-09-28 20:47:23,601] {local_task_job.py:102} INFO - Task exited with return code 0
