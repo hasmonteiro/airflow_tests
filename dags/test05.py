@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 import pandas as pd
 import zipfile
 import sqlalchemy
+import os
 
 # Constants
 DATA_PATH = '/home/alunoigti/airflow/data/3.DADOS/'
@@ -33,7 +34,7 @@ default_args = {
 # Defining the first DAG (flow)
 dag = DAG(
     'test-05',
-    description='Parallel processing',
+    description='Complete flow with DW-like integration',
     default_args=default_args,
     schedule_interval='*/10 * * * *'
 )
@@ -201,8 +202,10 @@ task_join_data = PythonOperator(
 # Persist data do DW
 def write_to_dw():
     final = pd.read_csv(DATA_PATH + 'enade_preprocessed.csv')
+    user = os.getenv('USERNAME_DB')
+    pw = os.getenv('PASSWORD_DB')
     engine = sqlalchemy.create_engine(
-        "mssql+pyodbc://SA:io1121!@*Igti@localhost:1433/enade2019?driver=ODBC+Driver+17+for+SQL+Server"
+        f"mssql+pyodbc://{user}:{pw}@localhost:1433/enade2019?driver=ODBC+Driver+17+for+SQL+Server"
     )
     final.to_sql('enade_preprocessed', con=engine, index=False, if_exists='append')
 

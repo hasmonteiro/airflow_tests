@@ -1,0 +1,23 @@
+[2021-09-29 17:17:43,738] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.get-data 2021-09-29T20:00:00+00:00 [queued]>
+[2021-09-29 17:17:43,757] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.get-data 2021-09-29T20:00:00+00:00 [queued]>
+[2021-09-29 17:17:43,757] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 17:17:43,757] {taskinstance.py:881} INFO - Starting attempt 1 of 2
+[2021-09-29 17:17:43,757] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 17:17:43,775] {taskinstance.py:901} INFO - Executing <Task(BashOperator): get-data> on 2021-09-29T20:00:00+00:00
+[2021-09-29 17:17:43,777] {standard_task_runner.py:54} INFO - Started process 54944 to run task
+[2021-09-29 17:17:43,807] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'test-05', 'get-data', '2021-09-29T20:00:00+00:00', '--job_id', '170', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test05.py', '--cfg_path', '/tmp/tmp7w74zfg1']
+[2021-09-29 17:17:43,808] {standard_task_runner.py:78} INFO - Job 170: Subtask get-data
+[2021-09-29 17:17:43,897] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: test-05.get-data 2021-09-29T20:00:00+00:00 [running]> alunoigti-VirtualBox
+[2021-09-29 17:17:43,906] {bash_operator.py:113} INFO - Tmp dir root location: 
+ /tmp
+[2021-09-29 17:17:43,907] {bash_operator.py:134} INFO - Temporary script location: /tmp/airflowtmpimlwhxsg/get-datak2aoemp3
+[2021-09-29 17:17:43,907] {bash_operator.py:146} INFO - Running command: curl https://download.inep.gov.br/microdados/Enade_Microdados/microdados_enade_2019.zip -o /home/alunoigti/airflow/data/microdados_enade_2019.zip
+[2021-09-29 17:17:43,912] {bash_operator.py:153} INFO - Output:
+[2021-09-29 17:17:43,916] {bash_operator.py:157} INFO -   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[2021-09-29 17:17:43,917] {bash_operator.py:157} INFO -                                  Dload  Upload   Total   Spent    Left  Speed
+[2021-09-29 17:18:00,354] {bash_operator.py:157} INFO -   0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 32.2M    0  119k    0     0   230k      0  0:02:23 --:--:--  0:02:23  230k  5 32.2M    5 1829k    0     0  1221k      0  0:00:27  0:00:01  0:00:26 1221k 12 32.2M   12 4209k    0     0  1663k      0  0:00:19  0:00:02  0:00:17 1662k 20 32.2M   20 6700k    0     0  1913k      0  0:00:17  0:00:03  0:00:14 1913k 29 32.2M   29 9659k    0     0  2146k      0  0:00:15  0:00:04  0:00:11 2146k 37 32.2M   37 12.2M    0     0  2276k      0  0:00:14  0:00:05  0:00:09 2489k 39 32.2M   39 12.6M    0     0  1949k      0  0:00:16  0:00:06  0:00:10 2161k 45 32.2M   45 14.5M    0     0  1991k      0  0:00:16  0:00:07  0:00:09 2158k 54 32.2M   54 17.5M    0     0  2110k      0  0:00:15  0:00:08  0:00:07 2248k 63 32.2M   63 20.4M    0     0  2209k      0  0:00:14  0:00:09  0:00:05 2266k 72 32.2M   72 23.3M    0     0  2274k      0  0:00:14  0:00:10  0:00:04 2272k 73 32.2M   73 23.7M    0     0  2092k      0  0:00:15  0:00:11  0:00:04 2284k 78 32.2M   78 25.4M    0     0  2088k      0  0:00:15  0:00:12  0:00:03 2233k 83 32.2M   83 26.9M    0     0  2041k      0  0:00:16  0:00:13  0:00:03 1925k 90 32.2M   90 29.1M    0     0  2056k      0  0:00:16  0:00:14  0:00:02 1766k 98 32.2M   98 31.8M    0     0  2103k      0  0:00:15  0:00:15 --:--:-- 1747k100 32.2M  100 32.2M    0     0  2012k      0  0:00:16  0:00:16 --:--:-- 1818k
+[2021-09-29 17:18:00,519] {bash_operator.py:159} INFO - Command exited with return code 0
+[2021-09-29 17:18:00,524] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=test-05, task_id=get-data, execution_date=20210929T200000, start_date=20210929T201743, end_date=20210929T201800
+[2021-09-29 17:18:03,752] {local_task_job.py:102} INFO - Task exited with return code 0

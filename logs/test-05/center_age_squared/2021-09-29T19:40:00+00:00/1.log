@@ -1,0 +1,16 @@
+[2021-09-29 17:25:22,741] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.center_age_squared 2021-09-29T19:40:00+00:00 [queued]>
+[2021-09-29 17:25:22,755] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.center_age_squared 2021-09-29T19:40:00+00:00 [queued]>
+[2021-09-29 17:25:22,756] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 17:25:22,756] {taskinstance.py:881} INFO - Starting attempt 1 of 2
+[2021-09-29 17:25:22,756] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 17:25:22,825] {taskinstance.py:901} INFO - Executing <Task(PythonOperator): center_age_squared> on 2021-09-29T19:40:00+00:00
+[2021-09-29 17:25:22,830] {standard_task_runner.py:54} INFO - Started process 55342 to run task
+[2021-09-29 17:25:22,872] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'test-05', 'center_age_squared', '2021-09-29T19:40:00+00:00', '--job_id', '197', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test05.py', '--cfg_path', '/tmp/tmphycozxyg']
+[2021-09-29 17:25:22,873] {standard_task_runner.py:78} INFO - Job 197: Subtask center_age_squared
+[2021-09-29 17:25:23,006] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: test-05.center_age_squared 2021-09-29T19:40:00+00:00 [running]> alunoigti-VirtualBox
+[2021-09-29 17:25:23,127] {utils.py:141} INFO - NumExpr defaulting to 1 threads.
+[2021-09-29 17:25:24,027] {python_operator.py:114} INFO - Done. Returned value was: None
+[2021-09-29 17:25:24,032] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=test-05, task_id=center_age_squared, execution_date=20210929T194000, start_date=20210929T202522, end_date=20210929T202524
+[2021-09-29 17:25:27,719] {local_task_job.py:102} INFO - Task exited with return code 0

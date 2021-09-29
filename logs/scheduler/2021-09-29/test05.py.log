@@ -1872,3 +1872,508 @@ ModuleNotFoundError: No module named 'sqlachemy'
 [2021-09-29 16:47:53,787] {logging_mixin.py:112} INFO - [2021-09-29 16:47:53,787] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
 [2021-09-29 16:47:54,031] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
 [2021-09-29 16:47:54,145] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.362 seconds
+[2021-09-29 17:05:58,655] {scheduler_job.py:154} INFO - Started process (PID=54304) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:05:58,675] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:05:58,676] {logging_mixin.py:112} INFO - [2021-09-29 17:05:58,675] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:05:59,233] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:05:59,281] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:05:59,334] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:05:59,347] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:00:00+00:00: scheduled__2021-09-29T19:00:00+00:00, externally triggered: False>
+[2021-09-29 17:05:59,696] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:10:00+00:00: scheduled__2021-09-29T19:10:00+00:00, externally triggered: False>
+[2021-09-29 17:05:59,753] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:20:00+00:00: scheduled__2021-09-29T19:20:00+00:00, externally triggered: False>
+[2021-09-29 17:05:59,814] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:05:59,899] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:05:59,945] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:06:00,397] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:06:00,399] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:06:00,401] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 19:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:06:00,404] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 19:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:06:00,406] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:06:00,408] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:06:00,409] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:06:00,419] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 1.764 seconds
+[2021-09-29 17:07:55,104] {scheduler_job.py:154} INFO - Started process (PID=54415) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:07:55,117] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:07:55,132] {logging_mixin.py:112} INFO - [2021-09-29 17:07:55,131] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:07:55,377] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:07:55,393] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:07:55,652] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:07:55,659] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:00:00+00:00: scheduled__2021-09-29T19:00:00+00:00, externally triggered: False>
+[2021-09-29 17:07:55,750] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:10:00+00:00: scheduled__2021-09-29T19:10:00+00:00, externally triggered: False>
+[2021-09-29 17:07:55,761] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:20:00+00:00: scheduled__2021-09-29T19:20:00+00:00, externally triggered: False>
+[2021-09-29 17:07:55,772] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:07:55,783] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:07:55,792] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:07:55,799] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:07:55,996] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:07:55,998] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:07:56,000] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 19:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:07:56,002] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:07:56,004] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:07:56,006] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:07:56,008] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:07:56,016] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.913 seconds
+[2021-09-29 17:11:45,322] {scheduler_job.py:154} INFO - Started process (PID=54562) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:11:45,324] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:11:45,325] {logging_mixin.py:112} INFO - [2021-09-29 17:11:45,325] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:11:45,490] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:11:45,509] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:11:45,549] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:11:45,551] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:00:00+00:00: scheduled__2021-09-29T19:00:00+00:00, externally triggered: False>
+[2021-09-29 17:11:45,613] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:10:00+00:00: scheduled__2021-09-29T19:10:00+00:00, externally triggered: False>
+[2021-09-29 17:11:45,640] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:20:00+00:00: scheduled__2021-09-29T19:20:00+00:00, externally triggered: False>
+[2021-09-29 17:11:45,656] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:11:45,664] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:11:45,672] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:11:45,680] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:11:45,686] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:11:45,879] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:11:45,881] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:45,883] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:45,885] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:45,887] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:45,889] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:45,890] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:45,892] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:45,894] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:45,896] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:11:46,014] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.692 seconds
+[2021-09-29 17:17:40,573] {scheduler_job.py:154} INFO - Started process (PID=54938) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:17:40,575] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:17:40,575] {logging_mixin.py:112} INFO - [2021-09-29 17:17:40,575] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:17:40,791] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:17:40,834] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:17:40,843] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:00:00+00:00: scheduled__2021-09-29T19:00:00+00:00, externally triggered: False>
+[2021-09-29 17:17:40,929] {logging_mixin.py:112} INFO - [2021-09-29 17:17:40,929] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 19:00:00+00:00: scheduled__2021-09-29T19:00:00+00:00, externally triggered: False> failed
+[2021-09-29 17:17:40,941] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:10:00+00:00: scheduled__2021-09-29T19:10:00+00:00, externally triggered: False>
+[2021-09-29 17:17:40,951] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:20:00+00:00: scheduled__2021-09-29T19:20:00+00:00, externally triggered: False>
+[2021-09-29 17:17:40,960] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:17:40,968] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:17:40,975] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:17:40,983] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:17:40,990] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:17:41,175] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:17:41,177] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:17:41,179] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:17:41,181] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:17:41,183] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:17:41,185] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:17:41,187] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:17:41,333] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.760 seconds
+[2021-09-29 17:20:01,703] {scheduler_job.py:154} INFO - Started process (PID=55057) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:20:01,760] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:20:01,765] {logging_mixin.py:112} INFO - [2021-09-29 17:20:01,764] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:20:01,899] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:20:01,917] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:20:02,054] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:20:02,056] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:10:00+00:00: scheduled__2021-09-29T19:10:00+00:00, externally triggered: False>
+[2021-09-29 17:20:02,061] {logging_mixin.py:112} INFO - [2021-09-29 17:20:02,061] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 19:10:00+00:00: scheduled__2021-09-29T19:10:00+00:00, externally triggered: False> failed
+[2021-09-29 17:20:02,066] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:20:00+00:00: scheduled__2021-09-29T19:20:00+00:00, externally triggered: False>
+[2021-09-29 17:20:02,078] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:20:02,087] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:20:02,095] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:20:02,103] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:20:02,126] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:20:02,144] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:20:02,323] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:20:02,325] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:20:02,327] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:20:02,329] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:20:02,331] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:20:02,332] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:20:02,334] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:20:02,336] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:20:02,359] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.657 seconds
+[2021-09-29 17:22:11,899] {scheduler_job.py:154} INFO - Started process (PID=55161) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:22:11,903] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:22:11,903] {logging_mixin.py:112} INFO - [2021-09-29 17:22:11,903] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:22:12,068] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:22:12,104] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:22:12,127] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:20:00+00:00: scheduled__2021-09-29T19:20:00+00:00, externally triggered: False>
+[2021-09-29 17:22:12,196] {logging_mixin.py:112} INFO - [2021-09-29 17:22:12,196] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 19:20:00+00:00: scheduled__2021-09-29T19:20:00+00:00, externally triggered: False> failed
+[2021-09-29 17:22:12,202] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:22:12,212] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:22:12,221] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:22:12,228] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:22:12,236] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:22:12,244] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:22:12,453] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:22:12,456] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,458] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,461] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,463] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,466] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,469] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,471] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,472] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,474] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,476] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:22:12,594] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.695 seconds
+[2021-09-29 17:24:53,343] {scheduler_job.py:154} INFO - Started process (PID=55306) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:24:53,348] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:24:53,348] {logging_mixin.py:112} INFO - [2021-09-29 17:24:53,348] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:24:53,535] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:24:53,574] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:24:53,585] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:24:53,656] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:24:53,674] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:24:53,683] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:24:53,692] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:24:53,700] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:24:53,829] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:24:53,831] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:24:53,833] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:24:53,837] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:24:53,839] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:24:53,841] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:24:53,843] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:24:53,845] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:24:53,857] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.515 seconds
+[2021-09-29 17:26:37,067] {scheduler_job.py:154} INFO - Started process (PID=55465) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:26:37,069] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:26:37,069] {logging_mixin.py:112} INFO - [2021-09-29 17:26:37,069] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:26:37,558] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:26:37,584] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:26:37,592] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:26:37,678] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:26:37,709] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:26:37,724] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:26:37,734] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:26:37,742] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:26:38,092] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:26:38,102] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:26:38,106] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:26:38,117] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:26:38,122] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:26:38,126] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:26:38,138] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:26:38,142] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:26:38,152] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:26:38,267] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 1.200 seconds
+[2021-09-29 17:40:56,859] {scheduler_job.py:154} INFO - Started process (PID=3261) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:40:56,876] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:40:56,877] {logging_mixin.py:112} INFO - [2021-09-29 17:40:56,877] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:40:57,123] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:40:57,163] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:40:57,280] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:40:57,282] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:40:57,427] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:40:57,446] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:40:57,464] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:40:57,475] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:40:57,485] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:40:57,494] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:40:57,664] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:40:57,669] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,671] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,673] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,676] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,678] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,680] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,682] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,685] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,687] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:40:57,696] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.838 seconds
+[2021-09-29 17:42:57,192] {scheduler_job.py:154} INFO - Started process (PID=3381) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:42:57,213] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:42:57,213] {logging_mixin.py:112} INFO - [2021-09-29 17:42:57,213] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:42:57,353] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:42:57,378] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:42:57,504] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:42:57,506] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False>
+[2021-09-29 17:42:57,510] {logging_mixin.py:112} INFO - [2021-09-29 17:42:57,510] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 19:30:00+00:00: scheduled__2021-09-29T19:30:00+00:00, externally triggered: False> failed
+[2021-09-29 17:42:57,516] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:42:57,524] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:42:57,532] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:42:57,540] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:42:57,547] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:42:57,555] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:42:57,563] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:42:57,725] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:42:57,727] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,729] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,731] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,733] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,734] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,736] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,738] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,740] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,742] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:42:57,893] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.701 seconds
+[2021-09-29 17:45:03,274] {scheduler_job.py:154} INFO - Started process (PID=3544) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:45:03,276] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:45:03,276] {logging_mixin.py:112} INFO - [2021-09-29 17:45:03,276] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:45:03,415] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:45:03,455] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:45:03,463] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:45:03,525] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:45:03,534] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:45:03,543] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:05:58.464837+00:00: manual__2021-09-29T20:05:58.464837+00:00, externally triggered: True>
+[2021-09-29 17:45:03,551] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:45:03,558] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:45:03,565] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:45:03,670] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:45:03,672] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:45:03,674] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:45:03,675] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:05:58.464837+00:00 [scheduled]> in ORM
+[2021-09-29 17:45:03,678] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:45:03,679] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:45:03,681] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:45:03,938] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.664 seconds
+[2021-09-29 17:46:53,288] {scheduler_job.py:154} INFO - Started process (PID=3630) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:46:53,290] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:46:53,290] {logging_mixin.py:112} INFO - [2021-09-29 17:46:53,290] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:46:53,426] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:46:53,471] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:46:53,481] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:46:53,563] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:46:53,576] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:46:53,587] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:46:53,597] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:46:53,609] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:46:53,724] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:46:53,728] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:46:53,730] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:46:53,732] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:46:53,734] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:46:53,738] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:46:53,891] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.603 seconds
+[2021-09-29 17:48:50,997] {scheduler_job.py:154} INFO - Started process (PID=3744) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:48:51,011] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:48:51,012] {logging_mixin.py:112} INFO - [2021-09-29 17:48:51,012] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:48:51,407] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:48:51,461] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:48:51,479] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False>
+[2021-09-29 17:48:51,656] {logging_mixin.py:112} INFO - [2021-09-29 17:48:51,656] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 19:40:00+00:00: scheduled__2021-09-29T19:40:00+00:00, externally triggered: False> failed
+[2021-09-29 17:48:51,677] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:48:51,687] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:48:51,730] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:48:51,750] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:48:51,763] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:48:51,945] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:48:51,947] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 19:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:48:51,949] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:48:51,951] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:48:51,955] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:48:51,971] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.974 seconds
+[2021-09-29 17:50:34,032] {scheduler_job.py:154} INFO - Started process (PID=3843) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:50:34,041] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:50:34,042] {logging_mixin.py:112} INFO - [2021-09-29 17:50:34,042] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:50:34,264] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:50:34,290] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:50:34,479] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 17:50:34,483] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False>
+[2021-09-29 17:50:34,491] {logging_mixin.py:112} INFO - [2021-09-29 17:50:34,491] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 19:50:00+00:00: scheduled__2021-09-29T19:50:00+00:00, externally triggered: False> failed
+[2021-09-29 17:50:34,518] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:50:34,531] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:50:34,551] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:50:34,564] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:50:34,576] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 17:50:34,729] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:50:34,733] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:50:34,736] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:50:34,739] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:50:34,741] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:50:34,743] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:50:34,744] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:50:34,772] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.740 seconds
+[2021-09-29 17:52:11,625] {scheduler_job.py:154} INFO - Started process (PID=3995) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:52:11,628] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:52:11,628] {logging_mixin.py:112} INFO - [2021-09-29 17:52:11,628] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:52:11,787] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:52:11,806] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:52:11,887] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False>
+[2021-09-29 17:52:11,894] {logging_mixin.py:112} INFO - [2021-09-29 17:52:11,894] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 20:00:00+00:00: scheduled__2021-09-29T20:00:00+00:00, externally triggered: False> failed
+[2021-09-29 17:52:11,913] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:52:11,928] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:52:11,946] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:52:11,964] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 17:52:12,065] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:52:12,067] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:10:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:52:12,069] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:52:12,071] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:52:12,073] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:52:12,075] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:52:12,077] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:52:12,085] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.459 seconds
+[2021-09-29 17:54:03,103] {scheduler_job.py:154} INFO - Started process (PID=4144) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:54:03,105] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:54:03,105] {logging_mixin.py:112} INFO - [2021-09-29 17:54:03,105] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:54:03,235] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:54:03,252] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:54:03,339] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False>
+[2021-09-29 17:54:03,346] {logging_mixin.py:112} INFO - [2021-09-29 17:54:03,346] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 20:10:00+00:00: scheduled__2021-09-29T20:10:00+00:00, externally triggered: False> failed
+[2021-09-29 17:54:03,366] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:54:03,375] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:54:03,383] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 17:54:03,440] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:54:03,442] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:54:03,448] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:54:03,453] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:54:03,479] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.376 seconds
+[2021-09-29 17:55:17,961] {scheduler_job.py:154} INFO - Started process (PID=4214) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:55:17,963] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:55:17,964] {logging_mixin.py:112} INFO - [2021-09-29 17:55:17,964] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:55:18,281] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:55:18,314] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:55:18,470] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:55:18,494] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:55:18,519] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 17:55:18,645] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:55:18,649] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:55:18,654] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:55:18,656] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:55:18,669] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.709 seconds
+[2021-09-29 17:56:50,384] {scheduler_job.py:154} INFO - Started process (PID=4310) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:56:50,400] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:56:50,400] {logging_mixin.py:112} INFO - [2021-09-29 17:56:50,400] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:56:50,570] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:56:50,660] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:56:50,721] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:56:50,765] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:56:50,787] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 17:56:50,934] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:56:50,937] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:56:50,946] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:56:51,009] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.625 seconds
+[2021-09-29 17:57:58,773] {scheduler_job.py:154} INFO - Started process (PID=4370) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:57:58,775] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:57:58,775] {logging_mixin.py:112} INFO - [2021-09-29 17:57:58,775] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:57:58,935] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:57:59,057] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:57:59,071] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:57:59,084] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:57:59,096] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 17:57:59,152] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:57:59,155] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:20:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:57:59,164] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:57:59,169] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:57:59,176] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:57:59,189] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.416 seconds
+[2021-09-29 17:59:19,925] {scheduler_job.py:154} INFO - Started process (PID=4468) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:59:19,928] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 17:59:19,928] {logging_mixin.py:112} INFO - [2021-09-29 17:59:19,928] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:59:20,104] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 17:59:20,183] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 17:59:20,194] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False>
+[2021-09-29 17:59:20,199] {logging_mixin.py:112} INFO - [2021-09-29 17:59:20,199] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 20:20:00+00:00: scheduled__2021-09-29T20:20:00+00:00, externally triggered: False> failed
+[2021-09-29 17:59:20,244] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 17:59:20,260] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 17:59:20,289] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 17:59:20,291] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:30:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:59:20,293] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 17:59:20,314] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.389 seconds
+[2021-09-29 18:00:29,662] {scheduler_job.py:154} INFO - Started process (PID=4546) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:00:29,665] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:00:29,665] {logging_mixin.py:112} INFO - [2021-09-29 18:00:29,665] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:00:29,844] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:00:29,922] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:00:30,021] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:00:30,024] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False>
+[2021-09-29 18:00:30,031] {logging_mixin.py:112} INFO - [2021-09-29 18:00:30,031] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 20:30:00+00:00: scheduled__2021-09-29T20:30:00+00:00, externally triggered: False> failed
+[2021-09-29 18:00:30,045] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 18:00:30,064] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:00:30,164] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:00:30,167] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:00:30,171] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:00:30,206] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.544 seconds
+[2021-09-29 18:01:38,509] {scheduler_job.py:154} INFO - Started process (PID=4625) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:01:38,512] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:01:38,512] {logging_mixin.py:112} INFO - [2021-09-29 18:01:38,512] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:01:38,671] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:01:38,747] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:01:38,756] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 18:01:38,765] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:01:38,849] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:01:38,851] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:01:38,854] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:01:38,873] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.364 seconds
+[2021-09-29 18:03:02,442] {scheduler_job.py:154} INFO - Started process (PID=4714) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:03:02,454] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:03:02,454] {logging_mixin.py:112} INFO - [2021-09-29 18:03:02,454] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:03:02,749] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:03:02,822] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:03:02,831] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 18:03:02,840] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:03:02,885] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:03:02,887] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:03:02,894] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.452 seconds
+[2021-09-29 18:04:04,355] {scheduler_job.py:154} INFO - Started process (PID=4848) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:04:04,357] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:04:04,357] {logging_mixin.py:112} INFO - [2021-09-29 18:04:04,357] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:04:04,487] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:04:04,595] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:04:04,607] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 18:04:04,617] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:04:04,657] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:04:04,658] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:40:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:04:04,661] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:04:04,749] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.394 seconds
+[2021-09-29 18:08:57,016] {scheduler_job.py:154} INFO - Started process (PID=2639) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:08:57,045] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:08:57,045] {logging_mixin.py:112} INFO - [2021-09-29 18:08:57,045] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:08:57,364] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:08:57,413] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:08:57,420] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False>
+[2021-09-29 18:08:57,493] {logging_mixin.py:112} INFO - [2021-09-29 18:08:57,493] {dagrun.py:311} INFO - Marking run <DagRun test-05 @ 2021-09-29 20:40:00+00:00: scheduled__2021-09-29T20:40:00+00:00, externally triggered: False> failed
+[2021-09-29 18:08:57,508] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:08:58,021] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:08:58,023] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.apply_filters 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:08:58,108] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 1.094 seconds
+[2021-09-29 18:10:06,428] {scheduler_job.py:154} INFO - Started process (PID=2930) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:10:06,430] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:10:06,431] {logging_mixin.py:112} INFO - [2021-09-29 18:10:06,431] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:10:06,583] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:10:06,622] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:10:06,714] {scheduler_job.py:1315} INFO - Created <DagRun test-05 @ 2021-09-29T21:00:00+00:00: scheduled__2021-09-29T21:00:00+00:00, externally triggered: False>
+[2021-09-29 18:10:06,715] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:10:06,797] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 21:00:00+00:00: scheduled__2021-09-29T21:00:00+00:00, externally triggered: False>
+[2021-09-29 18:10:06,870] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:10:06,872] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:10:06,874] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_marriage_status 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:10:06,876] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.set_skin_color 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:10:06,880] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.start_processing 2021-09-29 21:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:10:06,890] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.462 seconds
+[2021-09-29 18:11:27,951] {scheduler_job.py:154} INFO - Started process (PID=3010) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:11:27,953] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:11:27,953] {logging_mixin.py:112} INFO - [2021-09-29 18:11:27,953] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:11:28,092] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:11:28,108] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:11:28,115] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:11:28,182] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 21:00:00+00:00: scheduled__2021-09-29T21:00:00+00:00, externally triggered: False>
+[2021-09-29 18:11:28,234] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:11:28,236] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.center_age_squared 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:11:28,238] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.get-data 2021-09-29 21:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:11:28,256] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.306 seconds
+[2021-09-29 18:12:46,513] {scheduler_job.py:154} INFO - Started process (PID=3100) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:12:46,517] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:12:46,517] {logging_mixin.py:112} INFO - [2021-09-29 18:12:46,517] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:12:46,979] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:12:47,119] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:12:47,144] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:12:47,368] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 21:00:00+00:00: scheduled__2021-09-29T21:00:00+00:00, externally triggered: False>
+[2021-09-29 18:12:47,581] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:12:47,587] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.join_data 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:12:47,605] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.unzip_data 2021-09-29 21:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:12:47,777] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 1.264 seconds
+[2021-09-29 18:14:01,485] {scheduler_job.py:154} INFO - Started process (PID=3151) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:14:01,501] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:14:01,502] {logging_mixin.py:112} INFO - [2021-09-29 18:14:01,502] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:14:01,650] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:14:01,667] {scheduler_job.py:1305} INFO - Processing test-05
+[2021-09-29 18:14:01,676] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 20:50:00+00:00: scheduled__2021-09-29T20:50:00+00:00, externally triggered: False>
+[2021-09-29 18:14:01,749] {scheduler_job.py:771} INFO - Examining DAG run <DagRun test-05 @ 2021-09-29 21:00:00+00:00: scheduled__2021-09-29T21:00:00+00:00, externally triggered: False>
+[2021-09-29 18:14:01,804] {scheduler_job.py:459} INFO - Skipping SLA check for <DAG: test-05> because no tasks in DAG have SLAs
+[2021-09-29 18:14:01,806] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.write_dw 2021-09-29 20:50:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:14:01,808] {scheduler_job.py:1668} INFO - Creating / updating <TaskInstance: test-05.change_decimal 2021-09-29 21:00:00+00:00 [scheduled]> in ORM
+[2021-09-29 18:14:01,820] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.335 seconds
+[2021-09-29 18:17:18,140] {scheduler_job.py:154} INFO - Started process (PID=3348) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:17:18,208] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:17:18,208] {logging_mixin.py:112} INFO - [2021-09-29 18:17:18,208] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:17:18,341] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:17:18,358] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.218 seconds
+[2021-09-29 18:18:14,192] {scheduler_job.py:154} INFO - Started process (PID=3438) to work on /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:18:14,196] {scheduler_job.py:1589} INFO - Processing file /home/alunoigti/airflow/dags/test05.py for tasks to queue
+[2021-09-29 18:18:14,196] {logging_mixin.py:112} INFO - [2021-09-29 18:18:14,196] {dagbag.py:417} INFO - Filling up the DagBag from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:18:14,382] {scheduler_job.py:1601} INFO - DAG(s) dict_keys(['test-05']) retrieved from /home/alunoigti/airflow/dags/test05.py
+[2021-09-29 18:18:14,415] {scheduler_job.py:162} INFO - Processing /home/alunoigti/airflow/dags/test05.py took 0.223 seconds

@@ -1,0 +1,15 @@
+[2021-09-29 17:06:15,570] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.change_decimal 2021-09-29T19:30:00+00:00 [queued]>
+[2021-09-29 17:06:15,582] {taskinstance.py:670} INFO - Dependencies all met for <TaskInstance: test-05.change_decimal 2021-09-29T19:30:00+00:00 [queued]>
+[2021-09-29 17:06:15,582] {taskinstance.py:880} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 17:06:15,582] {taskinstance.py:881} INFO - Starting attempt 1 of 2
+[2021-09-29 17:06:15,582] {taskinstance.py:882} INFO - 
+--------------------------------------------------------------------------------
+[2021-09-29 17:06:15,621] {taskinstance.py:901} INFO - Executing <Task(PythonOperator): change_decimal> on 2021-09-29T19:30:00+00:00
+[2021-09-29 17:06:15,623] {standard_task_runner.py:54} INFO - Started process 54322 to run task
+[2021-09-29 17:06:15,749] {standard_task_runner.py:77} INFO - Running: ['airflow', 'run', 'test-05', 'change_decimal', '2021-09-29T19:30:00+00:00', '--job_id', '151', '--pool', 'default_pool', '--raw', '-sd', 'DAGS_FOLDER/test05.py', '--cfg_path', '/tmp/tmpfu5hrksy']
+[2021-09-29 17:06:15,749] {standard_task_runner.py:78} INFO - Job 151: Subtask change_decimal
+[2021-09-29 17:06:15,781] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: test-05.change_decimal 2021-09-29T19:30:00+00:00 [running]> alunoigti-VirtualBox
+[2021-09-29 17:06:34,665] {python_operator.py:114} INFO - Done. Returned value was: None
+[2021-09-29 17:06:34,740] {taskinstance.py:1057} INFO - Marking task as SUCCESS.dag_id=test-05, task_id=change_decimal, execution_date=20210929T193000, start_date=20210929T200615, end_date=20210929T200634
+[2021-09-29 17:06:35,692] {local_task_job.py:102} INFO - Task exited with return code 0
